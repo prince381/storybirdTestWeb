@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="main-content">
+        <h1>Storybird Image & Audio Generation Service Test</h1>
+        <div class="flex">
+          <div class="left">
+            <form class="input-form">
+              <label for="storyData">Paste story data here (JSON format)</label>
+              <textarea id="storyData" name="storyData"></textarea>
+              <button id="generate">Submit</button>
+            </form>
+          </div>
+          <div class="right">
+            <div class="images">
+              <div class="image-container">
+                <img id="current" src="" alt="generated image" hidden>
+              </div>
+              <ul class="image-list"></ul>
+            </div>
+            <div class="audio">
+              <audio id="audio" controls></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
