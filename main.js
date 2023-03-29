@@ -2,7 +2,7 @@ import './style.css'
 import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const apiURL = 'http://localhost:5000/api/v1';
+  const apiURL = 'https://storybird-test.herokuapp.com/api/v1';
   
   const imageList = document.querySelector('.image-list');
   const currentImage = document.getElementById('current');
